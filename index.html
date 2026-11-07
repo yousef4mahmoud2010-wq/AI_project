@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>SkillPath AI | Career Guidance</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav">
+      <a class="brand" href="#" aria-label="SkillPath AI home">
+        <span class="brand-mark">S</span>
+        <span>SkillPath <b>AI</b></span>
+      </a>
+      <span class="nav-label">Career guidance for technical students</span>
+    </nav>
+    <div class="hero">
+      <span class="eyebrow">YOUR FUTURE, WITH A CLEARER PLAN</span>
+      <h1>Discover your path.<br><span>Build your future.</span></h1>
+      <p>Explore careers that fit your interests, understand your skill gaps, and follow a learning roadmap made around your goals.</p>
+      <a class="hero-link" href="#profile">Build my career plan <span>↓</span></a>
+    </div>
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="intro-row">
+      <div>
+        <p class="section-kicker">START HERE</p>
+        <h2>Create your student profile</h2>
+        <p class="muted">Tell us about your current level, skills, and interests. You can update these details any time.</p>
+      </div>
+      <div class="privacy-note"><span>●</span> Your demo data is saved in this browser</div>
+    </section>
+
+    <form id="profileForm" novalidate>
+      <section class="panel" id="profile">
+        <div class="panel-heading"><span class="step-number">01</span><div><h3>Personal information</h3><p>Let's get to know your starting point.</p></div></div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" type="text" placeholder="e.g. Alex" maxlength="60" required>
+          </div>
+          <div class="field">
+            <label for="level">Current level</label>
+            <select id="level" required>
+              <option value="">Choose your level</option>
+              <option>Beginner</option><option>Intermediate</option><option>Advanced</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="specialization">Specialization</label>
+            <select id="specialization" required>
+              <option value="">Choose specialization</option>
+              <option>Computer Science</option><option>Artificial Intelligence</option>
+              <option>Information Technology</option><option>Software Development</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="hours">Weekly learning time</label>
+            <select id="hours" required>
+              <option value="">Choose weekly hours</option>
+              <option value="2">1–3 hours</option><option value="5.5">4–7 hours</option>
+              <option value="10">8–12 hours</option><option value="15">More than 12 hours</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading"><span class="step-number">02</span><div><h3>Skills assessment</h3><p>Rate your current skills from 0 (no experience) to 5 (advanced).</p></div></div>
+        <div class="skills-grid">
+          <div class="field"><label for="html">HTML &amp; CSS</label><select id="html" class="skill-input"><option value="0">0 — No experience</option><option value="1">1 — Beginner</option><option value="2">2 — Basic</option><option value="3" selected>3 — Intermediate</option><option value="4">4 — Good</option><option value="5">5 — Advanced</option></select></div>
+          <div class="field"><label for="javascript">JavaScript</label><select id="javascript" class="skill-input"><option value="0">0 — No experience</option><option value="1">1 — Beginner</option><option value="2">2 — Basic</option><option value="3" selected>3 — Intermediate</option><option value="4">4 — Good</option><option value="5">5 — Advanced</option></select></div>
+          <div class="field"><label for="python">Python</label><select id="python" class="skill-input"><option value="0">0 — No experience</option><option value="1">1 — Beginner</option><option value="2">2 — Basic</option><option value="3" selected>3 — Intermediate</option><option value="4">4 — Good</option><option value="5">5 — Advanced</option></select></div>
+          <div class="field"><label for="problem">Problem solving</label><select id="problem" class="skill-input"><option value="0">0 — No experience</option><option value="1">1 — Beginner</option><option value="2">2 — Basic</option><option value="3" selected>3 — Intermediate</option><option value="4">4 — Good</option><option value="5">5 — Advanced</option></select></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading"><span class="step-number">03</span><div><h3>Your interests</h3><p>Select every field that sounds interesting to you.</p></div></div>
+        <div class="interest-grid">
+          <label class="interest-option"><input type="checkbox" name="interest" value="Web Development"><span class="interest-icon">⌘</span><span><b>Web Development</b><small>Build websites and web apps</small></span></label>
+          <label class="interest-option"><input type="checkbox" name="interest" value="Mobile Applications"><span class="interest-icon">▣</span><span><b>Mobile Applications</b><small>Create mobile experiences</small></span></label>
+          <label class="interest-option"><input type="checkbox" name="interest" value="AI Chatbots"><span class="interest-icon">✳</span><span><b>AI &amp; Chatbots</b><small>Build intelligent tools</small></span></label>
+          <label class="interest-option"><input type="checkbox" name="interest" value="Data Analysis"><span class="interest-icon">▥</span><span><b>Data Analysis</b><small>Find insights in data</small></span></label>
+          <label class="interest-option"><input type="checkbox" name="interest" value="Cyber Security"><span class="interest-icon">◇</span><span><b>Cyber Security</b><small>Help protect digital systems</small></span></label>
+          <label class="interest-option"><input type="checkbox" name="interest" value="Game Development"><span class="interest-icon">△</span><span><b>Game Development</b><small>Design interactive games</small></span></label>
+        </div>
+        <div class="field notes-field"><label for="notes">Career goal or anything else? <span class="optional">Optional</span></label><textarea id="notes" rows="3" maxlength="500" placeholder="Tell us what you enjoy learning or what you hope to build..."></textarea></div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Analyze my career <span>→</span></button>
+          <button class="btn btn-ghost" type="button" id="resetBtn">Start again</button>
+          <span id="formMessage" class="form-message" role="status"></span>
+        </div>
+      </section>
+    </form>
+
+    <section id="results" class="results-section" hidden>
+      <div class="results-title">
+        <div><p class="section-kicker">YOUR PERSONAL REPORT</p><h2 id="welcome">Your career dashboard</h2><p class="muted">Use these recommendations as a starting point, then explore and adjust your plan.</p></div>
+        <button class="btn btn-ghost" id="editProfileBtn" type="button">Edit profile</button>
+      </div>
+
+      <section class="dashboard-grid" aria-label="Progress overview">
+        <article class="stat-card"><span class="stat-icon">◎</span><p>Top career match</p><strong id="topCareerStat">—</strong><small id="topMatchStat">—</small></article>
+        <article class="stat-card"><span class="stat-icon">✓</span><p>Roadmap tasks done</p><strong id="tasksStat">0 / 0</strong><small>Keep moving forward</small></article>
+        <article class="stat-card"><span class="stat-icon">↗</span><p>Roadmap progress</p><strong id="progressStat">0%</strong><small>Based on completed tasks</small></article>
+        <article class="stat-card"><span class="stat-icon">✦</span><p>Skills to improve</p><strong id="gapsStat">0</strong><small>For your top career match</small></article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading"><span class="step-number">04</span><div><h3>Your career matches</h3><p>Scores are estimated from your selected interests and self-rated skills, using the matching rules in this prototype.</p></div></div>
+        <div id="recommendations" class="career-list"></div>
+      </section>
+
+      <section class="two-column">
+        <section class="panel">
+          <div class="panel-heading"><span class="step-number">05</span><div><h3>Skill gap analysis</h3><p>See which skills may need more practice for your top match.</p></div></div>
+          <div id="skillAnalysis"></div>
+        </section>
+        <section class="panel">
+          <div class="panel-heading"><span class="step-number">06</span><div><h3>Suggested projects</h3><p>Practice by building something real.</p></div></div>
+          <div id="projectSuggestions" class="project-list"></div>
+        </section>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading"><span class="step-number">07</span><div><h3>Your learning roadmap</h3><p>Tick off tasks as you complete them. Your progress is saved automatically in this browser.</p></div></div>
+        <div class="roadmap-progress"><div><b id="roadmapPercent">0% completed</b><span id="roadmapCount">0 of 0 tasks</span></div><div class="progress-track"><span id="roadmapBar"></span></div></div>
+        <div id="roadmapTasks" class="roadmap-list"></div>
+      </section>
+
+      <section class="panel assistant-panel">
+        <div class="panel-heading"><span class="step-number">08</span><div><h3>Career assistant</h3><p>Ask for guidance related to your recommended career.</p></div></div>
+        <div class="assistant-notice"><b>Prototype note:</b> This demo assistant uses predefined guidance rules. It is not connected to a live AI model or API yet.</div>
+        <div class="chat-box" id="chatBox" aria-live="polite"><div class="chat-message assistant-message">Hi! I can help you think about skills, projects, and next steps for your career path. What would you like to know?</div></div>
+        <form id="chatForm" class="chat-form">
+          <label class="sr-only" for="chatInput">Ask the career assistant</label>
+          <input id="chatInput" type="text" maxlength="300" placeholder="e.g. What should I learn next?" required>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+        <div class="quick-questions"><button type="button" data-question="What skills should I improve?">Skills to improve</button><button type="button" data-question="Suggest a project for me.">Suggest a project</button><button type="button" data-question="How should I prepare for a job interview?">Interview tips</button></div>
+      </section>
+
+      <section class="panel summary-panel">
+        <div><p class="section-kicker">YOUR NEXT STEP</p><h3>Small steps build strong careers.</h3><p id="personalSummary" class="muted"></p></div>
+        <button class="btn btn-ghost" type="button" id="printBtn">Print report</button>
+      </section>
+    </section>
+  </main>
+
+  <footer><b>SkillPath AI</b><span>Career guidance for technical and technological students</span><small>Prototype demonstration — recommendations are guidance, not guarantees.</small></footer>
+</body>
+</html>
